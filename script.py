@@ -168,9 +168,8 @@ def main(page):
         dict_writer.writerows(project_details_10K_only)
     print('file created')
 #------------------------------------------------------------------
-    
-    bot_key = '6271212992:AAG3L819O88h1OpfhxFM2-bauUuD1Sa-2zs'
-    chat_id = '1855555802'
+    bot_key = os.environ.get("BOT_KEY")
+    chat_id = os.environ.get("CHAT_ID")
 #------------------------------------------------------------------
     limit = 42   # the seuil need to be changed in function of each of the 2 scenario  
     time_interval = 5 
